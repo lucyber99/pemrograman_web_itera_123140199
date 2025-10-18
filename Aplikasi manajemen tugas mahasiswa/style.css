@@ -1,0 +1,165 @@
+/* ===== Reset dasar ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== Struktur dasar halaman ===== */
+body {
+  background-color: #f4f7fc;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+main {
+  flex: 1;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* ===== Form input ===== */
+.input_form, .search_form {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.input_form h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.task label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.task input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* ===== Daftar tugas ===== */
+.uncomplete_task, .completed_task {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.uncomplete_task h2, .completed_task h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.task_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ===== Item tugas ===== */
+.task_item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.task_item:hover {
+  transform: scale(1.01);
+  background-color: #f1f8ff;
+}
+
+.task_item h2 {
+  font-size: 18px;
+  color: #222;
+}
+
+.task_item p {
+  font-size: 14px;
+  color: #555;
+  margin-top: 4px;
+}
+
+/* ===== Tombol aksi ===== */
+.button_group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.styleNext {
+  background-color: #28a745;
+}
+
+.styleNext:hover {
+  background-color: #1e7e34;
+}
+
+.styleBack {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.styleBack:hover {
+  background-color: #e0a800;
+}
+
+.styleDelete {
+  background-color: #dc3545;
+}
+
+.styleDelete:hover {
+  background-color: #c82333;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  margin-top: auto;
+  font-size: 14px;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
