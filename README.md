@@ -30,37 +30,6 @@ Aplikasi web untuk mengelola koleksi buku pribadi yang memungkinkan pengguna men
 - **React Testing Library** - Testing components
 - **CSS3** - Styling dengan custom CSS
 
-## Struktur Folder
-
-```
-src/
-├── components/          # Komponen reusable
-│   ├── BookCard.jsx     # Card untuk menampilkan buku
-│   ├── BookForm.jsx     # Form untuk tambah/edit buku
-│   ├── FilterButtons.jsx # Tombol filter status
-│   ├── Navbar.jsx       # Navigation bar
-│   └── SearchBar.jsx    # Input pencarian
-├── contexts/            # Context API untuk state management
-│   └── BooksContext.jsx # Global state untuk data buku
-├── hooks/               # Custom React hooks
-│   ├── useDebounce.js   # Hook untuk debouncing
-│   └── useLocalStorage.js # Hook untuk localStorage
-├── pages/               # Halaman aplikasi
-│   ├── Home.jsx         # Halaman utama dengan daftar buku
-│   ├── AddBook.jsx      # Halaman tambah buku
-│   └── EditBook.jsx     # Halaman edit buku
-├── tests/               # Unit tests
-│   ├── BookCard.test.jsx
-│   ├── FilterButtons.test.jsx
-│   ├── SearchBar.test.jsx
-│   ├── useDebounce.test.js
-│   ├── useLocalStorage.test.js
-│   └── validation.test.js
-├── utils/               # Utility functions
-│   └── validation.js    # Validasi input & helper functions
-├── App.jsx              # Root component dengan routing
-└── main.jsx             # Entry point
-```
 
 ## Implementasi Persyaratan
 
@@ -92,6 +61,7 @@ src/
 ### Prasyarat
 - Node.js (versi 16 atau lebih baru)
 - npm atau yarn
+- React dasar
 
 ### Langkah-langkah
 
@@ -152,16 +122,6 @@ src/
 1. Klik tombol **"Hapus"** pada card buku
 2. Konfirmasi penghapusan
 
-## Validasi Form
-
-Aplikasi memiliki validasi input yang ketat:
-
-- **Judul**: Wajib diisi, minimal 2 karakter, maksimal 100 karakter
-- **Penulis**: Wajib diisi, minimal 2 karakter, maksimal 50 karakter
-- **Status**: Harus dipilih salah satu dari 3 opsi
-
-Error message akan ditampilkan jika validasi gagal.
-
 ## Testing
 
 Aplikasi memiliki **31 unit tests** yang mencakup:
@@ -204,23 +164,9 @@ Aplikasi memiliki **31 unit tests** yang mencakup:
 
 Jalankan tests dengan: `npm test`
 
-## Fitur Tambahan
-
-- **Debounced Search**: Pencarian dengan delay 300ms untuk performa optimal
-- **Responsive Design**: Tampilan optimal di berbagai ukuran layar
-- **Status Color Coding**: 
-  - 🟢 Hijau = Sudah Dimiliki
-  - 🔵 Biru = Sedang Dibaca
-  - 🟡 Kuning = Ingin Dibeli
-- **Konfirmasi Hapus**: Dialog konfirmasi sebelum menghapus buku
-- **Persistence**: Data tersimpan otomatis di localStorage
-
 ## Browser Support
 
 - Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
 
 ## Lisensi
 
