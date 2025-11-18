@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <title>Manajemen Tugas Mahasiswa</title>
+</head>
+<body>
+  <header>
+    <h1>Todo List Tugas</h1>
+  </header>
+
+  <main>
+    <!-- Form input tugas -->
+    <section class="input_form">
+      <h3>Masukkan Tugas kamu</h3>
+      <form id="inputTask">
+        <div class="task">
+          <label for="task_name">Nama Kegiatan atau Tugas</label>
+          <input type="text" id="task_name" required>
+        </div>
+        <div class="task">
+          <label for="task_subject">Matakuliah</label>
+          <input type="text" id="task_subject" required>
+        </div>
+        <div class="task">
+          <label for="task_date_deadline">Deadline</label>
+          <input type="date" id="task_date" onchange="showDay()">
+          <input type="time" id="task_time_deadline" required>
+        </div>
+        <div>
+          <button id="submit_task" type="submit">Simpan Tugas</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- kelompok tugas yang belum diselesaikan -->
+    <section class="uncomplete_task">
+      <h2>Tugas yang belum selesai</h2>
+      <div id="uncomplete_task_list" class="task_list"></div>
+    </section>
+
+    <!-- kelompok tugas yang sudah diselesaikan -->
+    <section class="completed_task">
+      <h2>Tugas yang sudah selesai</h2>
+      <div id="completed_task_list" class="task_list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>all rights reserved @Revolusi Al-Ghifari</p>
+  </footer>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
